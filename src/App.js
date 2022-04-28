@@ -8,11 +8,6 @@ function App() {
   const [userName, setUserName] = useState('')
   const [chosenColor,setChosenColor] = useState('#aaa')
 
-  const clickHandler = (e) => {
-    //set background style to chosenColor on click
-    // setBgColor(chosenColor)
-  }
-
   return (
     <>
       <h1>welcome to the scribblr</h1>
@@ -30,7 +25,6 @@ function App() {
       <Board 
         chosenColor={chosenColor}
         userName={userName}
-        clickHandler={clickHandler}
       />
     </>
   )
