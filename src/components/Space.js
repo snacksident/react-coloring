@@ -1,7 +1,13 @@
-export default function Space(){
+export default function Space({clickHandler, chosenColor}){
+
+
     return(
-        <div className="space-div">
-            this is a space in a div
+        <div 
+            className="space-div"
+            // style={{backgroundColor: chosenColor}}
+            onClick={clickHandler}
+        >
+            <p> </p>
         </div>
     )
 }

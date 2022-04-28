@@ -1,8 +1,7 @@
 import { GithubPicker } from 'react-color'
-import { useState } from 'react'
 
-export default function ColorPicker() {
-    const [chosenColor,setChosenColor] = useState('#fff')
+export default function ColorPicker({chosenColor,setChosenColor}) {
+    // const [chosenColor,setChosenColor] = useState('#fff')
 
     const handleColorChange = (color) => {
         setChosenColor(color)

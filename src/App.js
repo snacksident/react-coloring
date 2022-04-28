@@ -6,12 +6,21 @@ import { useState } from 'react'
 function App() {
   //state vars
   const [userName, setUserName] = useState('')
+  const [chosenColor,setChosenColor] = useState('#fff')
 
+  const clickHandler = (e) => {
+    console.log('clicky clicky')
+    //set background style to chosenColor on click
+    console.log(e.target.style)
+  }
 
   return (
     <>
       <h1>welcome to the scribblr</h1>
-      <ColorPicker />
+      <ColorPicker
+        chosenColor={chosenColor}
+        setChosenColor={setChosenColor}
+      />
       <form>
         <label htmlFor='userName'>enter username here</label>
         <input 
@@ -19,7 +28,11 @@ function App() {
           onChange={(e)=>setUserName(e.target.value)}
         ></input>
       </form>
-      <Board userName={userName}/>
+      <Board 
+        chosenColor={chosenColor}
+        userName={userName}
+        clickHandler={clickHandler}
+      />
     </>
   )
 }
