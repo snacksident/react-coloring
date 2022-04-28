@@ -5,15 +5,6 @@ export default function Board() {
     return(
         <>
         <h1>this is the board</h1>
-        <Space />
-        <Space />
-        <Space />
-        <Space />
-        <Space />
-        <Space />
-        <Space />
-        <Space />
-        <Space />
         </>
     )
 }
