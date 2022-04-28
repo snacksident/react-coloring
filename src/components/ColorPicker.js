@@ -1,4 +1,4 @@
-import { GithubPicker } from 'react-color'
+import { CirclePicker } from 'react-color'
 
 export default function ColorPicker({chosenColor,setChosenColor}) {
     // const [chosenColor,setChosenColor] = useState('#fff')
@@ -10,7 +10,7 @@ export default function ColorPicker({chosenColor,setChosenColor}) {
     return(
         <>
             <h2>pick a color here</h2>
-            <GithubPicker 
+            <CirclePicker 
                 color={chosenColor}
                 onChange={handleColorChange}
             />

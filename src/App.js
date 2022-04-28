@@ -6,12 +6,11 @@ import { useState } from 'react'
 function App() {
   //state vars
   const [userName, setUserName] = useState('')
-  const [chosenColor,setChosenColor] = useState('#fff')
+  const [chosenColor,setChosenColor] = useState('#aaa')
 
   const clickHandler = (e) => {
-    console.log('clicky clicky')
     //set background style to chosenColor on click
-    console.log(e.target.style)
+    // setBgColor(chosenColor)
   }
 
   return (
